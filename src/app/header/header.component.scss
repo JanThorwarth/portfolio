@@ -1,0 +1,36 @@
+header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141D2F;
+    padding: 37px 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Padding wird korrekt berechnet */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    font-weight: 300;
+    font-size: 23px;
+    >a:hover {
+            color:  #70E61C;
+    }
+}
+
+.name-header {
+    >a {
+        font-size: 24px;
+    }
+}
+

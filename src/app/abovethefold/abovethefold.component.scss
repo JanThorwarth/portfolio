@@ -1,0 +1,108 @@
+.start {
+    height: 100vh;
+    width: 100%;
+    background: #141D2F;
+    position: relative;
+}
+.layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack introduction and button vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.i-am {
+    rotate: (-90deg);
+    font-size: 90px;
+    font-weight: 300;
+}
+
+.name-job {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align name and job to the left */
+}
+
+.start-name {
+    font-weight: 600;
+    font-size: 128px;
+}
+
+.start-job {
+    color: #9747FF;
+    font-size: 64px;
+}
+
+.start-purple {
+    position: absolute;
+    left: -230px;
+    top: 135px;
+}
+
+.start-blue {
+    position: absolute;
+    right: -460px;
+    top: 70px;
+}
+
+.btn-div {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Space between the introduction and the button */
+}
+
+button {
+    border: none;
+    background-color: #70E61C;
+    color: #fff;
+    font-size: 23px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.left-line-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.green-line {
+    width: 100px;
+    border: 2px solid #70E61C;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+.scroll-down {
+    rotate: (90deg);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    gap: 4px;
+    >img {
+        rotate: (-90deg);
+    }
+}
