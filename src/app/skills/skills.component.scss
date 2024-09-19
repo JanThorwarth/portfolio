@@ -1,0 +1,33 @@
+section {
+    background: #141D2F;
+    width: 1440px;
+}
+.skills-bg {
+    position: absolute;
+    margin-top: -238px;
+}
+.skills-content {
+    height: 100vh;
+
+}
+.left-section {
+    padding: 40px 80px;
+    position: relative;
+    z-index: 100;
+    
+}
+.skill-icons {
+    width: 532px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.html-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}

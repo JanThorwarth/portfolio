@@ -1,0 +1,48 @@
+section {
+    background: #141D2F;
+    width: 1440px;
+}
+.about-me-content {
+    height: 85vh;
+   
+    display: flex;
+}
+.left-section {
+    padding: 40px 80px;
+    font-weight: 300;
+    >h1 {
+    font-size: 90px;
+    font-weight: 600;
+    text-align: left;
+    }
+    >p {
+    font-size: 16px;
+    text-align: left;
+
+    }
+}
+.location {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+   
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    >img {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.bg {
+    position: absolute;
+    top: 1000px;
+    
+}
+.pb {
+    position: relative;
+    right: -100px;
+}

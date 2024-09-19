@@ -4,12 +4,11 @@ header {
     align-items: center;
     background: #141D2F;
     padding: 37px 100px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 1440px;
     z-index: 1000;
-    box-sizing: border-box; /* Padding wird korrekt berechnet */
+    position: fixed;
+    top: 0;
+    
 }
 
 a {
