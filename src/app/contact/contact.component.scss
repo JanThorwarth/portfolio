@@ -1,0 +1,140 @@
+.contact-section {
+    width: 1440px;
+    background: #141D2F;
+
+}
+.headline {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    >h1 {
+        font-family: 'Poppins';
+        font-size: 90px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+.line {
+    border: 2px solid #70E61C;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 500px;
+}
+.problem-line {
+    border: 2px solid #1CDAE6;
+    width: 68px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+
+}
+.problem {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+   
+    >h2 {
+        
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+
+    }
+}
+.problem-solve-div {
+    display: flex;
+    flex-direction: column;
+}
+.problem-solve {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.problem-text {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 100px;
+    width: fit-content;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    margin-right: 80px;
+    >button  {
+        margin-top: 24px;
+        padding: 15px 30px;
+        background: #B6B6B6;
+        border-radius: 10px;
+        font-size: 23px;
+
+    }
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    background: #141D2F;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: white; /* Placeholder in Grau */
+}
+
+.input-field:focus {
+    border-color: #9747FF; /* Lila Umrandung beim Fokus */
+}
+
+.message-field {
+    height: 150px;
+    resize: none;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.privacy-policy input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00FF75; /* Grüner Rand für das Kästchen */
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.privacy-policy input[type="checkbox"]:checked {
+    background-color: #00FF75; /* Häkchen-Hintergrund grün */
+    border-color: #00FF75;
+}
+
+.privacy-policy a {
+    color: #9747FF; /* Link für die Datenschutzrichtlinie in Lila */
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+
