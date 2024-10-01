@@ -1,0 +1,45 @@
+.footer-section {
+    background: #141D2F;
+    width: 1440px;
+
+}
+.line {
+    border-top: 4px solid #70E61C;
+    width: 100%;
+}
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.name-left {
+    >h1 {
+        display: flex;
+        font-size: 40px;
+        >p {
+            color: #70E61C;
+        }
+
+    }
+    >p {
+        
+    
+    font-size: 16px;
+    font-weight: 300;
+
+    text-align: left;
+
+    }
+}
+.name-middle {
+    >p {
+        font-size: 23px;
+        font-weight: 300;
+    }
+}
+.logo-right {
+    display: flex;
+    gap: 42px;
+}

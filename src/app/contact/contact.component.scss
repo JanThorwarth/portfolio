@@ -1,6 +1,10 @@
 .contact-section {
     width: 1440px;
     background: #141D2F;
+    position: relative;
+    overflow-y: hidden;
+   
+    
 
 }
 .headline {
@@ -9,6 +13,8 @@
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 100;
     >h1 {
         font-family: 'Poppins';
         font-size: 90px;
@@ -64,6 +70,7 @@
 }
 
 .contact-form {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,11 +79,14 @@
     max-width: 650px;
     padding: 20px;
     margin-right: 80px;
+    z-index: 100;
     >button  {
         margin-top: 24px;
         padding: 15px 30px;
         background: #B6B6B6;
         border-radius: 10px;
+        font-weight: 300;
+        font-size: 23px;
         font-size: 23px;
 
     }
@@ -135,6 +145,27 @@
 
 .privacy-policy a:hover {
     text-decoration: underline;
+}
+.up-button {
+    background: #141D2F;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    z-index: 100;
+    >img {
+        position: relative;
+        z-index: 100;
+    }
+  
+}
+.contact-bg {
+    position: absolute;
+    right: 0;
+    top: -50px;
+    z-index: 99;
+
+    
 }
 
 
