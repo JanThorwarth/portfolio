@@ -3,6 +3,7 @@
     width: 1440px;
     height: 100vh;
     position: relative;
+    
 
 }
 .left-bg {
@@ -28,16 +29,18 @@
     justify-content: center;
     align-items: center;
     transform: rotate(-90deg); /* Rotiert den Text um 90 Grad */
+    
    
     
     >p {
         display: flex;
-        overflow-y: hidden;
-        height: 100px;
+       
+       
     }
 
 }
 .name-job {
+    margin-right: 50px;
    
     >h1 {
     font-size: 128px;
@@ -54,6 +57,7 @@
    font-weight: 300;
     text-align: left;
     height: 116px;
+    position: relative;
     }
 }
 .lets-talk {
@@ -63,6 +67,7 @@
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
+    position: relative;
     cursor: pointer;
 }
 .above-the-fold-button {
@@ -108,5 +113,98 @@
         width: 24px;
         height: auto;
         transform: rotate(-90deg); 
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .left-bg {
+        position: absolute;
+        left: -240px;
+        top: 70px;
+
+    }
+    
+}
+
+
+@media (max-width: 1230px) {
+   .i-am {
+    >p {
+     
+        font-size: 54px;
+    }
+   }
+   .name-job {
+    >h1 {
+        font-size: 80px;
+        height: 100px;
+        
+    }
+    >h2 {
+        font-size: 40px;
+    }
+   }
+   .introduction {
+    display: flex;
+   }
+    
+}
+
+@media (max-width: 1090px) {
+    .left-bg {
+        position: absolute;
+        left: -240px;
+        top: -30px;
+
+    }
+    .above-the-fold {
+      
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .i-am {
+        >p {
+            font-size: 32px;
+           
+
+          
+        }
+        
+       }
+       .name-job {
+        >h1 {
+            font-size: 45px;
+            height: 54px;
+            
+        }
+        >h2 {
+            font-size: 29px;
+        }
+       }
+       .introduction {
+        display: flex;
+       }
+       .right-bg {
+        position: absolute;
+        right: -550px;
+        top: 158px;
+       }
+       .left-bg {
+        position: absolute;
+        left: -350px;
+        top: -30px;
+    }
+    .above-the-fold-button {
+        margin-top: 0;
+       
+    }
+    
+}
+@media (max-width: 900px) {
+    .scroll-down-container {
+        display: none;
     }
 }

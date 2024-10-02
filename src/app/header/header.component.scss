@@ -1,14 +1,21 @@
-header {  
+.header {  
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #141D2F;
     padding: 37px 100px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     z-index: 1000;
     position: fixed;
     top: 0;
     
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a {
@@ -28,9 +35,40 @@ a {
 }
 
 .name-header {
+    
     >a {
+        display: flex;
         font-size: 24px;
-       
+       >p {
+        color: #70E61C;
+       }
     }
+
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        >a {
+            font-size: 16px;
+        }
+    }
+    
+}
+@media (max-width: 650px) {
+    .navbar {
+        >a {
+           display: none;
+        }
+    }
+    
+}
+@media (max-width: 400px) {
+    .name-header {
+        >a {
+            font-size: 16px;
+       
+        }
+    }
+    
 }
 
