@@ -43,3 +43,19 @@ footer {
     display: flex;
     gap: 42px;
 }
+
+@media (max-width: 500px) {
+    .name-middle{
+        >p {
+            font-size: 18px;
+        }
+    }
+    .logo-right {
+        gap: 24px;
+    }
+}
+@media (max-width: 400px) {
+    footer {
+        flex-direction: column;
+    }
+}

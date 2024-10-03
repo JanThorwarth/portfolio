@@ -1,7 +1,7 @@
 .portfolio {
     background: #141D2F;
     width: 1440px;
-    position: relative;
+  position: relative;
 }
 .portfolio-content {
     
@@ -60,4 +60,57 @@
 .portfilio-left-bg {
     position: absolute;
     bottom: 0;
+}
+
+
+
+@media (max-width: 800px) {
+    .portfolio-content {
+        >p {
+            position: relative;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-left: 0;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .portfilio-right-bg {
+        right: -150px;
+    }
+    .portfilio-left-bg {
+        bottom: -3850px;
+    }
+    .projects {
+        >img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .portfolio-header {
+        display: flex;
+        justify-content: center;
+        >h1 {
+            font-size: 60px;
+        }
+    }
+    .portfolio-bar {
+        width: 200px;
+    }
+    .portfolio {
+        position: static;
+    }
+    
+}
+@media (max-width: 530px) {
+    .portfolio-header {
+        >h1 {
+            font-size: 40px;
+        }
+    }
+    .portfolio-bar {
+        width: 80px;
+    }
 }

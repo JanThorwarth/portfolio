@@ -123,20 +123,19 @@
     gap: 10px;
     font-size: 14px;
     color: #fff;
+    >img {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        min-width: 24px;
+        min-height: 24px;
+      
+    }
 }
 
-.privacy-policy input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00FF75; /* Grüner Rand für das Kästchen */
-    background-color: transparent;
-    border-radius: 4px;
-}
 
-.privacy-policy input[type="checkbox"]:checked {
-    background-color: #00FF75; /* Häkchen-Hintergrund grün */
-    border-color: #00FF75;
-}
+
+
 
 .privacy-policy a {
     color: #9747FF; /* Link für die Datenschutzrichtlinie in Lila */
@@ -166,6 +165,91 @@
     z-index: 99;
 
     
+}
+
+@media (max-width: 1250px) {
+    .problem {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form {
+        margin: 0;
+    }
+    .contact-bg {
+        right: -200px;
+
+    }
+    .headline {
+        justify-content: center;
+        >h1 {
+            position: relative;
+            z-index: 100;
+            background: #141D2F;
+
+        }
+    }
+    .line {
+        position: absolute;
+        right: 0;
+        max-width: 300px;
+        z-index: -1;
+    }
+    .problem-solve {
+        justify-content: center;
+    }
+    .problem-text {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .contact-bg {
+        top: 300px;
+
+    }
+    .headline {
+      
+        >h1 {
+            font-size: 40px;
+        }
+    }
+    .problem-text {
+        margin-left: 0;
+        padding: 24px;
+    }
+    .contact-bg {
+        right: -300px;
+    }
+    .line {
+        width: 280px;
+    }
+
+}
+@media (max-width: 420px) {
+    .problem-solve {
+        >h2 {
+            font-size: 16px;
+
+        }
+
+    }
+    .line {
+        width: 200px;
+    }
+    .contact-bg {
+        right: -450px;
+    }
+    .contact-form {
+        >button {
+            font-size: 16px;
+
+        }
+    }
+    .up-button {
+        margin-right: 24px;
+    }
+
 }
 
 

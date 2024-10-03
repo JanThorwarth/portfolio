@@ -4,10 +4,10 @@ section {
 }
 .skills-bg {
     position: absolute;
-    margin-top: -238px;
+    margin-top: -295px;
 }
 .skills-content {
-    height: 70vh;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 
@@ -39,6 +39,7 @@ section {
 
 .skills-description {
     z-index: 100;
+    width: 562px;
    
    
 }
@@ -57,6 +58,7 @@ section {
 .skills-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -93,3 +95,90 @@ section {
     background-color: #00e66c;
 }
 
+@media (max-width: 1250px) {
+    .skills-bg {
+        display: none;
+    }
+    .skills-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .another-skill {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    
+}
+
+@media (max-width: 600px) {
+    .another-skill {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .skills-header {
+        >h2 {
+            font-size: 40px;
+            gap: 20px;
+        }
+    }
+    .skills-bar {
+        width: 160px;
+    }
+    .skills-description {
+        width: 500px;
+        >p {
+            font-size: 14px;
+            padding: 16px;
+            
+        }
+       
+    }
+    .another-skill {
+        >h3 {
+            font-size: 22px;
+        }
+        >p {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .get-in-touch {
+        padding: 8px 15px;
+        font-size: 20px;
+    }
+    .skill-icons {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        gap: 40px;
+    }
+    .html-icon {
+        >img {
+            width: 50px;
+        }
+    }
+    .left-section  {
+        padding: 40px 20px;
+    }
+    
+}
+@media (max-width: 480px) {
+    .skills-description {
+        width: 320px;
+        >p {
+            font-size: 14px;
+            padding: 16px;
+            
+        }
+       
+    }
+}

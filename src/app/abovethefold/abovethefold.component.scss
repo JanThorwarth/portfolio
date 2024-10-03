@@ -131,8 +131,10 @@
 @media (max-width: 1230px) {
    .i-am {
     >p {
-     
         font-size: 54px;
+        margin-left: 42px;
+        margin-top: 79px;
+    
     }
    }
    .name-job {
@@ -155,7 +157,7 @@
     .left-bg {
         position: absolute;
         left: -240px;
-        top: -30px;
+        top: 50px;
 
     }
     .above-the-fold {
@@ -168,10 +170,9 @@
     .i-am {
         >p {
             font-size: 32px;
-           
-
-          
+            margin-left: 69px;
         }
+        
         
        }
        .name-job {
@@ -195,7 +196,7 @@
        .left-bg {
         position: absolute;
         left: -350px;
-        top: -30px;
+        top: 180px;
     }
     .above-the-fold-button {
         margin-top: 0;
@@ -206,5 +207,68 @@
 @media (max-width: 900px) {
     .scroll-down-container {
         display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .i-am {
+        >p {
+            font-size: 20px;
+            margin-left: 82px;
+            margin-top: 89px;
+        
+        
+        }
+       }
+       .name-job {
+        >h1 {
+            font-size: 28px;
+            height: 33px;
+            
+        }
+        >h2 {
+            font-size: 20px;
+        }
+       }
+       .lets-talk {
+        font-size: 16px;
+       }
+       .right-bg {
+        position: absolute;
+        right: -650px;
+        top: 158px;
+       }
+       .left-bg {
+        position: absolute;
+        left: -450px;
+        top: 180px;
+    }
+}
+
+@media (max-width: 404px) {
+    .right-bg {
+        position: absolute;
+        right: -650px;
+        top: 158px;
+       }
+       .left-bg {
+        position: absolute;
+        left: -530px;
+        top: 181px;
+    }
+    .introduction {
+        flex-direction: column;
+    }
+    .i-am {
+        transform: rotate(0);
+        >p {
+            height: fit-content;
+            margin: 0;
+           
+            font-size: 40px;
+        }
+    }
+    .name-job {
+        margin: 0;
     }
 }

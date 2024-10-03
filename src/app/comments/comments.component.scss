@@ -3,8 +3,7 @@
     width: 1440px;
 }
 .comments {
-    width: 1340px;
-    height: 375px;
+position: relative;
     margin-left: 100px;
     margin-top: 100px;
 
@@ -17,6 +16,7 @@
     border-radius: 32px;
     margin-left: 67px;
     margin-top: 31px;
+    position: relative;
     >p {
        
         
@@ -40,7 +40,11 @@
 }
 .exclamation-mark {
     position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
 }
+
 .name {
     display: flex;
     align-items: center;
@@ -69,7 +73,10 @@
         border-bottom-left-radius: 4px ;
         width: 130px;
     }
+    
+  
 }
+
 .point {
     width: 8px;
     height: 8px;
@@ -88,4 +95,64 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+}
+
+
+@media (max-width: 1240px) {
+    .text-img {
+        margin-top: 120px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+    }
+    .comments {
+      margin: 0;
+    }
+    .text-container {
+        margin: 24px;
+        padding: 16px;
+        
+
+    }
+    .exclamation-mark {
+      display: none;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+        
+        >div {
+           position: absolute;
+           right: 0;
+           width: 50%;
+           z-index: -1;
+            
+        }
+    }
+    
+}
+@media (max-width: 800px) {
+    .img {
+        margin-top: 80px;
+        >img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+    .text {
+        >p {
+            font-size: 16px;
+        }
+       
+    }
+    
+}
+
+
+@media (max-width: 400px) {
+    .name {
+        flex-direction: column;
+    }
 }
