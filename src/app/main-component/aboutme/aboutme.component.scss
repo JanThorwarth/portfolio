@@ -4,14 +4,45 @@ section {
   
 }
 .about-me-content {
+  display: flex;
+  position: relative;
   
-    display: flex;
+   .location-img {
+   min-width: 30px;
+   min-height:  30px;
+   &:hover {
+    min-width: 35px;
+    min-height:  35px;
+  
+   }
+   }
+   .lamp-img {
+    min-width: 30px;
+    min-height:  30px;
+    &:hover {
+        min-width: 35px;
+        min-height:  35px;
+      
+       }
+
+   }
+   .puzzle-img {
+    min-width: 30px;
+    min-height:  30px;
+    &:hover {
+        min-width: 35px;
+        min-height:  35px;
+      
+       }
+   }
+    
   
 }
 .left-section {
     padding: 40px 80px;
     font-weight: 300;
-    position: relative;
+    width: 650px;
+    
     z-index: 100;
     >h1 {
     font-size: 90px;
@@ -27,7 +58,11 @@ section {
 .location {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 24px;
+    >img {
+        width: 30px;
+        height: auto;
+    }
    
 }
 .info {
@@ -75,7 +110,7 @@ section {
     .skills-bg {
         display: flex;
         position: absolute;
-        top: 1448px;
+        top: 533px;
     }
     
 }
@@ -99,7 +134,10 @@ section {
     .skills-bg {
         display: flex;
         position: absolute;
-        top: 1215px;
+        top: 293px;
+    }
+    .left-section {
+      width: 100%;
     }
 }
 

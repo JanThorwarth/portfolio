@@ -152,9 +152,12 @@
     margin-right: 100px;
     margin-bottom: 60px;
     z-index: 100;
+   
     >img {
         position: relative;
         z-index: 100;
+        cursor: pointer;
+      
     }
   
 }

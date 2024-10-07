@@ -1,6 +1,7 @@
 section {
     background: #141D2F;
     width: 1440px;
+   
 }
 .skills-bg {
     position: absolute;
@@ -10,6 +11,8 @@ section {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+  
+   
 
 }
 .left-section {
@@ -22,8 +25,9 @@ section {
     width: 532px;
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 62px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .html-icon {
     display: flex;
@@ -32,6 +36,13 @@ section {
     align-items: center;
     gap: 10px;
     text-align: center;
+    height: 139px;
+    >img {
+        &:hover {
+            position: relative;
+            top: -10px;
+        }
+    }
 }
 .right-section {
     z-index: 100;
@@ -89,15 +100,20 @@ section {
     border-radius: 10px;
     font-size: 23px;
     cursor: pointer;
+    &:hover {
+        background-color: #9747FF;
+        
+        width: 210px;
+        height: 70px;
+    }
 }
 
-.get-in-touch:hover {
-    background-color: #00e66c;
-}
+
 
 @media (max-width: 1250px) {
     .skills-bg {
         display: none;
+        
     }
     .skills-content {
         flex-direction: column-reverse;

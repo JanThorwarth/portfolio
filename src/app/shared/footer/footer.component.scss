@@ -15,6 +15,7 @@ footer {
     align-items: center;
 }
 .name-left {
+    
     >h1 {
         display: flex;
         font-size: 40px;
@@ -23,15 +24,21 @@ footer {
         }
 
     }
-    >p {
-        
     
-    font-size: 16px;
-    font-weight: 300;
+}
+.underline {
 
-    text-align: left;
-
-    }
+    >p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        cursor: pointer;
+        &:hover {
+            border-bottom: 2px solid #70E61C;
+            
+            
+        }
+        }
 }
 .name-middle {
     >p {
@@ -42,6 +49,22 @@ footer {
 .logo-right {
     display: flex;
     gap: 42px;
+    height: 40px;
+    align-items: center;
+    width: 120px;
+    justify-content: center;
+
+    >img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &:hover {
+            width: 40px;
+            height:  40px;
+        }
+    }
+   
+       
 }
 
 @media (max-width: 500px) {
