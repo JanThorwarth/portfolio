@@ -1,7 +1,9 @@
 .above-the-fold {
     background: #141D2F;
-    width: 1440px;
+    width: 100%;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
     
 
 }
@@ -25,10 +27,10 @@
 .i-am {
     font-size: 90px;
     font-weight: 300;
-    display: flex; /* inline-flex sorgt dafür, dass die Höhe nur so groß ist wie der Inhalt */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    transform: rotate(-90deg); /* Rotiert den Text um 90 Grad */
+    transform: rotate(-90deg);
     
    
     
@@ -88,6 +90,7 @@
 .above-the-fold-content {
     height: 100vh;
     display: flex;
+    width: 1440px;
     justify-content: center;
     align-items: center;
     flex-direction: column;

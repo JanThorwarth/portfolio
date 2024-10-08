@@ -1,10 +1,13 @@
 .portfolio {
     background: #141D2F;
-    width: 1440px;
-  position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
 }
 .portfolio-content {
-    
+    width: 1440px;
     >p {
         margin-left: 100px;
         font-size: 16px;
@@ -59,7 +62,9 @@
 
 .portfilio-left-bg {
     position: absolute;
+    z-index: 10;
     bottom: 0;
+    left: 0;
 }
 
 

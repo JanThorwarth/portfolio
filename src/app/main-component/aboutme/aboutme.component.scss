@@ -1,11 +1,15 @@
 section {
     background: #141D2F;
-    width: 1440px;
+    display: flex;
+    justify-content: center;
+    width: 100%
   
 }
 .about-me-content {
+    width: 1440px;
   display: flex;
   position: relative;
+  justify-content: center;
   
    .location-img {
    min-width: 30px;
@@ -97,6 +101,7 @@ section {
 }
 .skills-bg {
     position: absolute;
+    
     display: none;
     
 }
@@ -110,7 +115,7 @@ section {
     .skills-bg {
         display: flex;
         position: absolute;
-        top: 533px;
+        top: 1451px;
     }
     
 }

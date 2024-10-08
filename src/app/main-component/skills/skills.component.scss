@@ -1,6 +1,8 @@
 section {
     background: #141D2F;
-    width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
    
 }
 .skills-bg {
@@ -9,7 +11,9 @@ section {
 }
 .skills-content {
     margin-top: 100px;
+    width: 1440px;
     display: flex;
+   
     justify-content: space-between;
   
    

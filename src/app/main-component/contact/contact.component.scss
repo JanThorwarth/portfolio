@@ -1,11 +1,17 @@
 .contact-section {
-    width: 1440px;
+    width: 100%;
     background: #141D2F;
     position: relative;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
    
     
 
+}
+
+.contact-content {
+    width: 1440px;
 }
 .headline {
     margin-top: 80px;
@@ -35,6 +41,11 @@
     border-bottom-right-radius: 4px;
     
 
+}
+.contact-error {
+    color: red;
+    font-weight: 200;
+    width: 600px;
 }
 .problem {
     display: flex;
@@ -74,7 +85,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     width: 100%;
     max-width: 650px;
     padding: 20px;
@@ -83,13 +94,23 @@
     >button  {
         margin-top: 24px;
         padding: 15px 30px;
-        background: #B6B6B6;
         border-radius: 10px;
         font-weight: 300;
         font-size: 23px;
-        font-size: 23px;
-
+        border: none;
+        cursor: pointer;
+        &:hover {
+           
+        } 
     }
+    >span {
+        font-size: 14px;
+    }
+}
+.hoverable:hover {
+    background-color: #9747FF !important;
+    width: 270px;
+    height: 70px;
 }
 
 .input-field {
@@ -102,6 +123,15 @@
     border: 1px solid #9747FF;
     border-radius: 10px;
     outline: none;
+    &:hover {
+        border: 1px solid #1CDAE6;
+        cursor: pointer;
+    }
+   
+}
+
+.green-border {
+    border: 1px solid #70E61C;
 }
 
 .input-field::placeholder {
@@ -129,8 +159,20 @@
         justify-content: center;
         min-width: 24px;
         min-height: 24px;
+        cursor: pointer;
+        &:hover {
+            background: #183771;
+            border-radius: 50%;
+          
+
+
+
+        }
       
     }
+}
+.red-border {
+    border: 1px solid red;
 }
 
 
@@ -157,13 +199,16 @@
         position: relative;
         z-index: 100;
         cursor: pointer;
+        &:hover {
+            content: url("/assets/img/up-button-green.png");
+        }
       
     }
   
 }
 .contact-bg {
     position: absolute;
-    right: 0;
+    right: -100px;
     top: -50px;
     z-index: 99;
 
