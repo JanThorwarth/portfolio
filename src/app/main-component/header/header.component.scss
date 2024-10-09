@@ -11,6 +11,45 @@
     top: 0;
     
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    left: 100%; 
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.5s ease;
+}
+
+.overlay.active {
+    left: 0; 
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.overlay-content a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.overlay-content a:hover {
+    color: #70E61C;
+}
+
+.no-scroll {
+    overflow: hidden;
+    }
 header {
     width: 100%;
     display: flex;
@@ -19,6 +58,7 @@ header {
 }
 .menu {
     display: none;
+    cursor: pointer;
 }
 
 a {
@@ -48,6 +88,7 @@ a {
     }
 
 }
+
 
 
 @media (max-width: 850px) {

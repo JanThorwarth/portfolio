@@ -47,16 +47,22 @@
                     <img src="./assets/skills/scrum.png" alt="">
                     <p>Scrum</p>
                 </div>
+                <div class="left-skills">
 
-                <div class="html-icon">
-                    <img src="./assets/skills/material-design.png" alt="">
-                    <p>Material <br> design</p>
+                    <div class="html-icon">
+                        <img src="./assets/skills/material-design.png" alt="">
+                        <p>Material <br> design</p>
+                    </div>
+
+                    <div (mouseenter)="hover = true" (mouseleave)="hover = false" class="html-icon">
+                        <img src="./assets/skills/continually-learning.svg" alt="">
+                        <p>Continually <br> learning</p>
+
+                    </div>
+                    <img [ngClass]="{'visible': hover}" class="learning-bubble" src="./assets/skills/learning.png"
+                        alt="">
                 </div>
 
-                <div class="html-icon">
-                    <img src="./assets/skills/continually-learning.svg" alt="">
-                    <p>Continually <br> learning</p>
-                </div>
             </div>
         </div>
         <div class="skills-description">

@@ -8,6 +8,14 @@
             <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
         </div>
-        <img class="menu" src="./assets/img/burger-menu.png" alt="">
+        <img class="menu" (click)="toggleMenu()" src="./assets/img/burger-menu.png" alt="">
+        <div class="overlay" [ngClass]="{'active': menuOpen}">
+
+            <div class="overlay-content">
+                <a href="#about" (click)="toggleMenu()">About me</a>
+                <a href="#skills" (click)="toggleMenu()">Skills</a>
+                <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+            </div>
+        </div>
     </header>
 </section>

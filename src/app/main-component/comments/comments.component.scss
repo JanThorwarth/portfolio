@@ -7,7 +7,7 @@
 .comments {
 position: relative;
 width: 1440px;
-    margin-left: 100px;
+   
     margin-top: 100px;
 
 }
@@ -20,10 +20,7 @@ width: 1440px;
     margin-left: 67px;
     margin-top: 31px;
     position: relative;
-    >p {
-       
-        
-    }
+   
 
 }
 .text {
@@ -70,22 +67,33 @@ width: 1440px;
     margin-top: 31px;
     display: flex;
     align-items: center;
-    >div{
-        border: 2px solid #70E61C;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px ;
-        width: 130px;
-    }
+    min-width: 200px;
+    min-height: 200px;
     
+   
+    >img {
+        min-width: 150px;
+min-height: 150px;
+    }
   
 }
+.line {
+    border: 2px solid #70E61C;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px ;
+    width: 130px;
+    
+}
 
-.point {
+.point-1, .point-2, .point-3 {
     width: 8px;
     height: 8px;
     background: #1CDAE6;
     border-radius: 50%;
 
+}
+.active {
+    background-color: #70E61C;
 }
 .select-comments-div {
     margin-top: 24px;
@@ -98,6 +106,9 @@ width: 1440px;
     align-items: center;
     justify-content: center;
     gap: 16px;
+    >img {
+        cursor: pointer;
+    }
 }
 
 

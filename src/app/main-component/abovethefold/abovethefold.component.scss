@@ -102,9 +102,10 @@
     height: 1px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-;
-
 }
+    
+
+
 .left-green-bar {
     flex-direction: row;
     align-items: center;
@@ -115,11 +116,14 @@
     
     left: 0;
     bottom: 0;
-    >img {
-        cursor: pointer;
-        &:hover {
-            width: 40px;
-            height: 40px;
+    >a {
+        >img {
+            cursor: pointer;
+            &:hover {
+                width: 40px;
+                height: 40px;
+        }
+       
     
 
         }
@@ -135,9 +139,9 @@
     gap: 3px;
     >img {
         width: 24px;
-        height: auto;
-        transform: rotate(-90deg); 
+        transform: rotate(-90deg);
     }
+   
 }
 
 
@@ -184,14 +188,10 @@
         top: -69px;
 
     }
-    .above-the-fold {
-      
-    }
+    
     
 }
-@media (max-height: 700px) {
 
-}
 
 @media (max-width: 900px) {
     .i-am {

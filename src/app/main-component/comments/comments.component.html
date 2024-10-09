@@ -5,33 +5,34 @@
             <img class="exclamation-mark" src="./assets/img/exclamation-mark.png" alt="">
             <div class="text-container">
 
+
                 <div class="text">
-                    <p>Michael really kept the team together with his great organization <br>and clear communication.
-                        We
-                        wouldn't
-                        have got this far without his commitment.</p>
+                    <p>{{ comments[currentCommentIndex].message }}</p>
                 </div>
                 <div class="name">
                     <div class="comment-line"></div>
-                    <p>V.Schuster - Team Partner</p>
+                    <p>{{ comments[currentCommentIndex].name }}</p>
                 </div>
+
             </div>
 
+
             <div class="img">
-                <img src="./assets/img/schuster.png" alt="">
+                <img [src]="comments[currentCommentIndex].img" alt="">
                 <div class="line"></div>
             </div>
+
 
 
 
         </div>
         <div class="select-comments-div">
             <div class="select-comments">
-                <img src="./assets/img/left-arrow.png" alt="">
-                <div class="point"></div>
-                <div class="point"></div>
-                <div class="point"></div>
-                <img src="./assets/img/right-arrow.png" alt="">
+                <img (click)="prevComment()" src="./assets/img/left-arrow.png" alt="">
+                <div [ngClass]="{'active': currentCommentIndex === 0}" class="point-1"></div>
+                <div [ngClass]="{'active': currentCommentIndex === 1}" class="point-2"></div>
+                <div [ngClass]="{'active': currentCommentIndex === 2}" class="point-3"></div>
+                <img (click)="nextComment()" src="./assets/img/right-arrow.png" alt="">
             </div>
 
         </div>

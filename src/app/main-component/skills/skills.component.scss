@@ -41,6 +41,7 @@ section {
     gap: 10px;
     text-align: center;
     height: 139px;
+    width: 91px;
     >img {
         &:hover {
             position: relative;
@@ -111,7 +112,29 @@ section {
         height: 70px;
     }
 }
+.learning-bubble {
+    opacity: 0;
+    position: absolute;
+    bottom: 150px;
+    right: 202px;
+    opacity: 0;
+   
+    
+  
 
+}
+.visible {
+    opacity: 1
+    ;
+}
+.left-skills {
+    
+    gap: 62px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+}
 
 
 @media (max-width: 1250px) {
@@ -144,6 +167,19 @@ section {
         align-items: center;
        
     }
+    .learning-bubble {
+        right: 77px;
+        
+    
+    }
+    .left-skills {
+        gap: 16px;
+        margin-left: 45px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 400px;
+    }
     .skills-header {
         >h2 {
             font-size: 40px;
@@ -175,11 +211,12 @@ section {
         padding: 8px 15px;
         font-size: 20px;
     }
+    
     .skill-icons {
         display: flex;
         justify-content: center;
-        width: 300px;
-        gap: 40px;
+        width: 400px;
+        gap: 14px;
     }
     .html-icon {
         >img {
