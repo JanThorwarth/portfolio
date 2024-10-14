@@ -24,6 +24,7 @@
     align-items: center;
     flex-direction: row;
     gap: 32px;
+    margin-top: 40px;
 
     >h1 {
         font-size: 90px;
@@ -46,6 +47,16 @@
     overflow: hidden;
     border: 1px solid #70E61C;
     transition: transform 0.3s ease;
+}
+.portfolio-text {
+  
+
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 40px;
+
+
+
 }
 
 
@@ -170,11 +181,12 @@
         margin-top: 20px;
         height: 80px;
         gap: 40px;
-        >button {
-            font-size: 16px;
-            padding: 10px 15px;
-        }
+       
       
+    }
+    .github-btn, .live-btn {
+        font-size: 16px;
+        padding: 10px 15px;
     }
     .bg-text {
         height: 70%;
@@ -185,7 +197,7 @@
     
         }
         >p {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
     

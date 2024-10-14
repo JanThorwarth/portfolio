@@ -4,9 +4,22 @@
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
     
 
 }
+
+@keyframes jumpInfinite {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 20px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
 
 .left-bg {
     position: absolute;
@@ -25,6 +38,7 @@
  
 }
 .i-am {
+  
     font-size: 90px;
     font-weight: 300;
     display: flex; 
@@ -65,16 +79,17 @@
 .lets-talk {
     background-color: #70E61C;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     padding: 15px 30px;
     border: none;
+    width: 210px;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
     
     &:hover {
         background-color: #9747FF;
-        width: 170px;
+        width: 220px;
         height: 70px;
 
     }
@@ -82,7 +97,7 @@
 .above-the-fold-button {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 110px;
     
@@ -133,14 +148,20 @@
 .scroll-down-container {
  display: flex;
     position: absolute;
-    right: 0;
-    bottom: 60px;
+    right: 0px;
+    bottom: 100px;
     transform: rotate(90deg); 
     gap: 3px;
-    >img {
-        width: 24px;
-        transform: rotate(-90deg);
-    }
+    width: 208px;
+    
+   
+    
+}
+
+.scroll-arrow {
+    width: 24px;
+    transform: rotate(-90deg);
+    animation: jumpInfinite 1.5s infinite;
    
 }
 
@@ -246,7 +267,7 @@
 @media (max-width: 550px) {
     .i-am {
         >p {
-            font-size: 20px;
+            font-size: 24px;
             margin-left: 82px;
             margin-top: 89px;
         
@@ -254,17 +275,18 @@
         }
        }
        .name-job {
+        margin-right: 50px;
         >h1 {
-            font-size: 28px;
-            height: 33px;
+            font-size: 32px;
+            height: 35px;
             
         }
         >h2 {
-            font-size: 20px;
+            font-size: 22px;
         }
        }
        .lets-talk {
-        font-size: 16px;
+        font-size: 18px;
        }
        .right-bg {
         position: absolute;
@@ -276,7 +298,45 @@
         left: -450px;
         
     }
+    .above-the-fold-button {
+        margin-left: 40px;
+    }
+    .lets-talk {
+        width: 175px;
+        padding: 15px 20px;
+        &:hover {
+            width: 190px;
+            height: 70px;
+
+        }
+    }
 }
+
+@media (max-width: 450px) {
+    .i-am {
+        >p {
+            font-size: 20px;
+            margin-left: 82px;
+            margin-top: 89px;
+        
+        
+        }
+       }
+       .name-job {
+        margin-right: 50px;
+        >h1 {
+            font-size: 28px;
+            height: 32px;
+            
+        }
+        >h2 {
+            font-size: 20px;
+        }
+       }
+
+}
+    
+
 
 @media (max-width: 404px) {
     .right-bg {
@@ -294,6 +354,7 @@
     }
     .i-am {
         transform: rotate(0);
+        height: 60px;
         >p {
             height: fit-content;
             margin: 0;
@@ -303,5 +364,8 @@
     }
     .name-job {
         margin: 0;
+    }
+    .above-the-fold-button {
+        margin-left: 0;
     }
 }

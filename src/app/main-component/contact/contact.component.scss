@@ -80,6 +80,7 @@
 
 }
 
+
 .contact-form {
    
     display: flex;
@@ -99,9 +100,6 @@
         font-size: 23px;
         border: none;
         cursor: pointer;
-        &:hover {
-           
-        } 
     }
     >span {
         font-size: 14px;
@@ -109,7 +107,7 @@
 }
 .hoverable:hover {
     background-color: #9747FF !important;
-    width: 270px;
+     width: 285px;
     height: 70px;
 }
 
@@ -259,7 +257,7 @@
     .headline {
       
         >h1 {
-            font-size: 40px;
+            font-size: 60px;
         }
     }
     .problem-text {

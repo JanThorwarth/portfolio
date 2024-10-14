@@ -2,18 +2,25 @@
     <header>
         <div class="name-header">
             <a href="#abovethefold">J <p>a</p>n Thorw <p>a</p>rth</a>
+            <div class="lang-div">
+                <div [ngClass]="{'lang-switch': selectedLang === 'en'}" (click)="switchLanguage('en')" class="lang-en">
+                    EN</div>
+                <div [ngClass]="{'lang-switch': selectedLang === 'de'}" (click)="switchLanguage('de')" class="lang-de">
+                    DE</div>
+
+            </div>
         </div>
         <div class="navbar">
-            <a href="#about">About me</a>
-            <a href="#skills">Skills</a>
+            <a href="#about">{{ 'About me' | translate }}</a>
+            <a href="#skills">{{ 'Skills' | translate }}</a>
             <a href="#portfolio">Portfolio</a>
         </div>
         <img class="menu" (click)="toggleMenu()" src="./assets/img/burger-menu.png" alt="">
         <div class="overlay" [ngClass]="{'active': menuOpen}">
 
             <div class="overlay-content">
-                <a href="#about" (click)="toggleMenu()">About me</a>
-                <a href="#skills" (click)="toggleMenu()">Skills</a>
+                <a href="#about" (click)="toggleMenu()">{{ 'About me' | translate }}</a>
+                <a href="#skills" (click)="toggleMenu()">{{ 'Skills' | translate }}</a>
                 <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
             </div>
         </div>

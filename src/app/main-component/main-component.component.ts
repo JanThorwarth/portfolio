@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 
+
 @Component({
   selector: 'app-main-component',
   standalone: true,

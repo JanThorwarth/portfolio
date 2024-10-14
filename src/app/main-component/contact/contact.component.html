@@ -8,15 +8,13 @@
             <div class="problem-solve-div">
                 <div class="problem-solve">
                     <div class="problem-line"></div>
-                    <h2>Got a problem to solve?</h2>
+                    <h2>{{ "contactHeadline" | translate }}</h2>
                 </div>
                 <div class="problem-text">
-                    <p>Contact me through this form, I am interested in hearing <br> from you, knowing your ideas and
-                        contributing to
-                        your <br> projects with my work.
+                    <p>{{ "contactText" | translate }}
                         <br>
                         <br>
-                        Need a Frontend developer? <b>Contact me!</b>
+                        {{ "contactFrontend" | translate }} <b>{{ "contactContact" | translate }}</b>
                     </p>
                 </div>
             </div>
@@ -24,38 +22,37 @@
                 <input
                     [ngClass]="{'red-border': !name.valid && name.touched, 'green-border': name.valid && name.touched}"
                     minlength="4" #name="ngModel" [(ngModel)]="contactsData.name" name="name" type="text"
-                    placeholder="Your name" class="input-field" required>
+                    [placeholder]="'contactName' | translate" class="input-field" required>
                 @if (!name.valid && name.touched) {
-                <span class="contact-error">Your name is required</span>
+                <span class="contact-error">{{ "nameRequired" | translate }}</span>
                 }
                 <input
                     [ngClass]="{'red-border': !email.valid && email.touched, 'green-border': email.valid && email.touched}"
-                    #email="ngModel" [(ngModel)]="contactsData.email" name="email" type="email" placeholder="Your email"
-                    class="input-field" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    #email="ngModel" [(ngModel)]="contactsData.email" name="email" type="email"
+                    [placeholder]="'contactMail' | translate" class="input-field" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched) {
-                <span class="contact-error">Your email is required</span>
+                <span class="contact-error">{{ "mailRequired" | translate }}</span>
                 }
                 <textarea
                     [ngClass]="{'red-border': !message.valid && message.touched, 'green-border': message.valid && message.touched}"
-                    #message="ngModel" [(ngModel)]="contactsData.message" minlength="4" placeholder="Your message"
-                    class="input-field message-field" name="message" required></textarea>
+                    #message="ngModel" [(ngModel)]="contactsData.message" minlength="4"
+                    [placeholder]="'contactMessage' | translate" class="input-field message-field" name="message"
+                    required></textarea>
                 @if (!message.valid && message.touched) {
-                <span class="contact-error">Your message is empty</span>
+                <span class="contact-error">{{ "messageRequired" | translate }}</span>
 
                 }
 
                 <div class="privacy-policy">
                     <img (click)="acceptPolicy()" [src]="ImgSrc" alt="">
-                    <label for="privacy">I've read the <a href="privacyPolicy">privacy
-                            policy</a> and agree to the
-                        processing of my
-                        data
-                        as
-                        outlined.</label>
+                    <label for="privacy">{{ "ppStart" | translate }} <a href="privacyPolicy">{{ "pp" |translate }}</a>
+                        {{ "ppEnd" |translate }}</label>
                 </div>
+
                 <button class="button" [ngClass]="{'hoverable': ImgSrc === './assets/img/checkbox-checked.png' }"
-                    [ngStyle]="{'background-color': ImgSrc === './assets/img/checkbox-checked.png' ? '#70E61C': '#B6B6B6'}">Send
-                    message :)</button>
+                    [ngStyle]="{'background-color': ImgSrc === './assets/img/checkbox-checked.png' ? '#70E61C': '#B6B6B6'}">{{
+                    "contactBtn" | translate }}</button>
 
             </form>
             <img class="contact-bg" src="./assets/img/contact-bg.png" alt="">

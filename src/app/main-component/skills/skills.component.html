@@ -59,8 +59,14 @@
                         <p>Continually <br> learning</p>
 
                     </div>
-                    <img [ngClass]="{'visible': hover}" class="learning-bubble" src="./assets/skills/learning.png"
-                        alt="">
+                    <div [ngClass]="{'visible': hover}" class="speech-bubble">
+                        <div class="bubble">
+                            <p>{{ 'I have a special interest in learning' | translate }}</p>
+                            <img src="./assets/img/react-vue.png" alt="">
+                        </div>
+                        <img class="triangle" src="./assets/img/triangle.png" alt="">
+                    </div>
+
                 </div>
 
             </div>
@@ -70,17 +76,13 @@
                 <h2>Skills</h2>
                 <div class="skills-bar"></div>
             </div>
-            <p>My journey has involved working on diverse projects, employing a range of frontend technologies and
-
-                concepts. I am open to embracing new technologies and methodologies to Continously enhance my
-                skills and
-
-                stay ahead in the ever-evolving landscape of web development.
+            <p>{{ "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development." | translate }}
             </p>
             <div class="another-skill">
-                <h3>Looking for <span>another skill?</span></h3>
-                <p>Feel free to contact me. I look forward to expanding <br> on my previous knowledge.</p>
-                <button class="get-in-touch">Get in touch</button>
+                <h3>{{ "Looking for" | translate }} <span>{{ "another skill?" | translate }}</span></h3>
+                <p>{{ "Feel free to contact me. I look forward to expanding on my previous knowledge." | translate }}
+                </p>
+                <button class="get-in-touch">{{ "Get in touch" | translate }}</button>
             </div>
         </div>
 
